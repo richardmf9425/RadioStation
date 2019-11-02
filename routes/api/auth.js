@@ -8,7 +8,6 @@ const config = require('config');
 const bcrypt = require('bcryptjs');
 
 //route GET api/auth
-
 router.get('/', auth, async (req, res) => {
 	try {
 		const user = await User.findById(req.user.id).select('-password');
