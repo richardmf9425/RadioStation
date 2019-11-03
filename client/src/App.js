@@ -11,6 +11,9 @@ import store from './store';
 import { loadUser } from './actions/auth';
 import setAuthToken from './utils/setAuthToken';
 import './App.css';
+import Pricing from './components/layout/Pricing';
+import FAQ from './components/layout/FAQ';
+import Footer from './components/layout/Footer';
 
 if (localStorage.token) {
 	setAuthToken(localStorage.token);
@@ -34,6 +37,9 @@ function App() {
 							<Route exact path="/login" component={Login} />
 						</Switch>
 					</section>
+					<Pricing />
+					<FAQ />
+					<Footer />
 				</Fragment>
 			</Router>
 		</Provider>

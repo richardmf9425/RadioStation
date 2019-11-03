@@ -4,12 +4,14 @@ import { connect } from 'react-redux';
 import { logout } from '../../actions/auth';
 import { PropTypes } from 'prop-types';
 
-const Navbar = ({ auth: { isAuthenticated, loading }, logout }) => {
+const Navbar = ({ auth: { isAuthenticated, loading, user }, logout }) => {
+	const name = user ? user.name.split(' ')[0] : 'User';
 	const authLinks = (
 		<ul>
+			<li>Welcome, {name} </li>
 			<li>
 				<a onClick={logout} href="#!">
-					<i className="fas fa-sign-out-alt" /> <span className="hide-sm">LOG OUT</span>
+					<i className="fas fa-sign-out-alt" /> <span className="hide-sm"> LOG OUT</span>
 				</a>
 			</li>
 		</ul>
@@ -27,16 +29,16 @@ const Navbar = ({ auth: { isAuthenticated, loading }, logout }) => {
 	const commonLinks = (
 		<ul>
 			<li>
-				<Link to="/signup">Home</Link>
+				<Link to="/">Home</Link>
 			</li>
 			<li>
-				<Link to="/signup">Pricing</Link>
+				<Link to="/pricing">Pricing</Link>
 			</li>
 			<li>
-				<Link to="/signup">Pricing</Link>
+				<Link to="/contact">Contact</Link>
 			</li>
 			<li>
-				<Link to="/login">FAQ</Link>
+				<Link to="/faq">FAQ</Link>
 			</li>
 		</ul>
 	);

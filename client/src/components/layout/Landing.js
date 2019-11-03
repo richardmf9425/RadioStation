@@ -12,7 +12,11 @@ const Landing = ({ isAuthenticated }) => {
 			<section className="landing">
 				<div className="dark-overlay">
 					<div className="landing-inner">
-						<h1 className="x-large">At The Wellness Network</h1>
+						<h1 className="x-large">
+							{' '}
+							<span className="landing-blue">At The Wellness</span>{' '}
+							<span className="landing-green">Network</span>{' '}
+						</h1>
 						<p className="lead"> There's healing at the Well</p>
 						<figure>
 							<figcaption>Live Right Now:</figcaption>
