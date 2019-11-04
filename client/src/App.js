@@ -30,13 +30,13 @@ function App() {
 				<Fragment>
 					<Navbar />
 					<Route exact path="/" component={Landing} />
-					<section className="container">
-						<Alert />
-						<Switch>
-							<Route exact path="/signup" component={SignUp} />
-							<Route exact path="/login" component={Login} />
-						</Switch>
-					</section>
+
+					<Alert />
+					<Switch>
+						<Route exact path="/signup" component={SignUp} />
+						<Route exact path="/login" component={Login} />
+					</Switch>
+
 					<Pricing />
 					<FAQ />
 					<Footer />

@@ -21,42 +21,44 @@ const Login = ({ login, isAuthenticated }) => {
 	}
 	return (
 		<Fragment>
-			<div className="form-center">
-				<h1 className="large text-primary">Log In</h1>
-				<p className="lead">
-					<i className="fas fa-user" /> Log Into Your Account
-				</p>
-				<form className="form" onSubmit={(e) => onSubmit(e)}>
-					<div className="form-group">
-						<input
-							type="email"
-							placeholder="Email Address"
-							name="email"
-							value={email}
-							onChange={(e) => onChange(e)}
-							required
-						/>
-					</div>
-					<div className="form-group">
-						<input
-							type="password"
-							placeholder="Password"
-							name="password"
-							minLength="6"
-							value={password}
-							onChange={(e) => onChange(e)}
-							required
-						/>
-					</div>
-					<div className="btn-center">
-						<button className="btn btn-primary uppercase">
-							LOG IN <i className="fas fa-chevron-right icon-padding" />
-						</button>
-					</div>
-				</form>
-				<p className="my-1">
-					Don't have an account? <Link to="/signup">Create Account </Link>
-				</p>
+			<div className="auth-section container">
+				<div className="form-center">
+					<h1 className="large text-primary">Log In</h1>
+					<p className="lead">
+						<i className="fas fa-user" /> Log Into Your Account
+					</p>
+					<form className="form" onSubmit={(e) => onSubmit(e)}>
+						<div className="form-group">
+							<input
+								type="email"
+								placeholder="Email Address"
+								name="email"
+								value={email}
+								onChange={(e) => onChange(e)}
+								required
+							/>
+						</div>
+						<div className="form-group">
+							<input
+								type="password"
+								placeholder="Password"
+								name="password"
+								minLength="6"
+								value={password}
+								onChange={(e) => onChange(e)}
+								required
+							/>
+						</div>
+						<div className="btn-center">
+							<button className="btn btn-primary uppercase">
+								LOG IN <i className="fas fa-chevron-right icon-padding" />
+							</button>
+						</div>
+					</form>
+					<p className="my-1">
+						Don't have an account? <Link to="/signup">Create Account </Link>
+					</p>
+				</div>
 			</div>
 		</Fragment>
 	);

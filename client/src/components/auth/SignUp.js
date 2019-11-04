@@ -28,64 +28,66 @@ const SignUp = ({ setAlert, signup, isAuthenticated }) => {
 	}
 	return (
 		<Fragment>
-			<div className="form-center">
-				<h1 className="large text-primary">Sign Up</h1>
-				<p className="lead">
-					<i className="fas fa-user-plus" /> Create Your Account
-				</p>
-				<form className="form" onSubmit={(e) => onSubmit(e)}>
-					<div className="form-group">
-						<input
-							type="text"
-							placeholder="Name"
-							name="name"
-							value={name}
-							onChange={(e) => onChange(e)}
-							required
-						/>
-					</div>
-					<div className="form-group">
-						<input
-							type="email"
-							placeholder="Email Address"
-							name="email"
-							value={email}
-							onChange={(e) => onChange(e)}
-							required
-						/>
-						<small className="form-text">This website uses Gravatars</small>
-					</div>
-					<div className="form-group">
-						<input
-							type="password"
-							placeholder="Password"
-							name="password"
-							minLength="6"
-							value={password}
-							onChange={(e) => onChange(e)}
-							required
-						/>
-					</div>
-					<div className="form-group">
-						<input
-							type="password"
-							placeholder="Confirm Password"
-							name="passwordConfirm"
-							minLength="6"
-							value={passwordConfirm}
-							onChange={(e) => onChange(e)}
-							required
-						/>
-					</div>
-					<div className="btn-center">
-						<button className="btn btn-primary uppercase ">
-							SIGN UP <i className="fas fa-chevron-right icon-padding" />
-						</button>
-					</div>
-				</form>
-				<p className="my-1">
-					Already have an account? <Link to="/login">Sign In</Link>
-				</p>
+			<div className="container">
+				<div className="form-center">
+					<h1 className="large text-primary">Sign Up</h1>
+					<p className="lead">
+						<i className="fas fa-user-plus" /> Create Your Account
+					</p>
+					<form className="form" onSubmit={(e) => onSubmit(e)}>
+						<div className="form-group">
+							<input
+								type="text"
+								placeholder="Name"
+								name="name"
+								value={name}
+								onChange={(e) => onChange(e)}
+								required
+							/>
+						</div>
+						<div className="form-group">
+							<input
+								type="email"
+								placeholder="Email Address"
+								name="email"
+								value={email}
+								onChange={(e) => onChange(e)}
+								required
+							/>
+							<small className="form-text">This website uses Gravatars</small>
+						</div>
+						<div className="form-group">
+							<input
+								type="password"
+								placeholder="Password"
+								name="password"
+								minLength="6"
+								value={password}
+								onChange={(e) => onChange(e)}
+								required
+							/>
+						</div>
+						<div className="form-group">
+							<input
+								type="password"
+								placeholder="Confirm Password"
+								name="passwordConfirm"
+								minLength="6"
+								value={passwordConfirm}
+								onChange={(e) => onChange(e)}
+								required
+							/>
+						</div>
+						<div className="btn-center">
+							<button className="btn btn-primary uppercase ">
+								SIGN UP <i className="fas fa-chevron-right icon-padding" />
+							</button>
+						</div>
+					</form>
+					<p className="my-1">
+						Already have an account? <Link to="/login">Sign In</Link>
+					</p>
+				</div>
 			</div>
 		</Fragment>
 	);
