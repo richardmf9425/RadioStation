@@ -455,21 +455,22 @@ ul {
 }
 
 .pricing-header {
-  padding-top: 30px;
+  padding-top: 15vh;
 }
 
 .pricing-table {
-  max-width: 1200px;
+  max-width: 100%;
   margin: auto;
   display: flex;
   justify-content: center;
+  flex-direction: row;
   text-align: center;
   flex-wrap: wrap;
   color: black;
 }
 
 .col {
-  flex: 25%;
+  flex: 50%;
   padding: 10px;
   max-width: 340px;
   margin: 1.5rem;

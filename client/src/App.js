@@ -28,14 +28,13 @@ function App() {
 		<Provider store={store}>
 			<Router>
 				<Fragment>
-					<Navbar />
-					<Route exact path="/" component={Landing} />
-
 					<Alert />
 					<Switch>
 						<Route exact path="/signup" component={SignUp} />
 						<Route exact path="/login" component={Login} />
 					</Switch>
+					<Navbar />
+					<Route exact path="/" component={Landing} />
 
 					<Pricing />
 					<FAQ />
