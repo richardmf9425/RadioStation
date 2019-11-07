@@ -35,17 +35,17 @@ const Navbar = ({ auth: { isAuthenticated, loading, user }, logout }) => {
 				</Link>
 			</li>
 			<li>
-				<Link to="/pricing" onClick={() => scrollTo('pricing')}>
+				<Link to="/" onClick={() => scrollTo('pricing')}>
 					Pricing
 				</Link>
 			</li>
 			<li>
-				<Link to="/contact" onClick={() => scrollTo('landing')}>
+				<Link to="/" onClick={() => scrollTo('landing')}>
 					Contact
 				</Link>
 			</li>
 			<li>
-				<Link to="/faq" onClick={() => scrollTo('faq')}>
+				<Link to="/" onClick={() => scrollTo('faq')}>
 					FAQ
 				</Link>
 			</li>
@@ -57,7 +57,7 @@ const Navbar = ({ auth: { isAuthenticated, loading, user }, logout }) => {
 			duration: 1200,
 			delay: 100,
 			smooth: true,
-			offset: -150
+			offset: -100
 		});
 	};
 

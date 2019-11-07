@@ -15,6 +15,7 @@ import Pricing from './components/layout/Pricing';
 import FAQ from './components/layout/FAQ';
 import Footer from './components/layout/Footer';
 import { Element } from 'react-scroll';
+
 if (localStorage.token) {
 	setAuthToken(localStorage.token);
 }
