@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { connect } from 'react-redux';
 import { logout } from '../../actions/auth';
 import { PropTypes } from 'prop-types';
+import { scroller } from 'react-scroll';
 
 const Navbar = ({ auth: { isAuthenticated, loading, user }, logout }) => {
 	const name = user ? user.name.split(' ')[0] : 'User';
@@ -29,27 +30,43 @@ const Navbar = ({ auth: { isAuthenticated, loading, user }, logout }) => {
 	const commonLinks = (
 		<ul>
 			<li>
-				<Link to="/">Home</Link>
+				<Link to="/" onClick={() => scrollTo('landing')}>
+					Home
+				</Link>
 			</li>
 			<li>
-				<Link to="/pricing">Pricing</Link>
+				<Link to="/" onClick={() => scrollTo('pricing')}>
+					Pricing
+				</Link>
 			</li>
 			<li>
-				<Link to="/contact">Contact</Link>
+				<Link to="/" onClick={() => scrollTo('landing')}>
+					Contact
+				</Link>
 			</li>
 			<li>
-				<Link to="/faq">FAQ</Link>
+				<Link to="/" onClick={() => scrollTo('faq')}>
+					FAQ
+				</Link>
 			</li>
 		</ul>
 	);
+
+	const scrollTo = (element) => {
+		scroller.scrollTo(element, {
+			duration: 1200,
+			delay: 100,
+			smooth: true,
+			offset: -100
+		});
+	};
+
 	return (
 		<nav className="navbar">
-			<Link to="/">
+			<Link to="/" onClick={() => scrollTo('landing')}>
 				<div className="logo" />
 			</Link>
-			<h1>
-				<Link to="/">{/* <i className="fas fa-microphone-alt" /> Wellness Network */}</Link>
-			</h1>
+
 			{!loading && (
 				<Fragment>
 					{commonLinks}
