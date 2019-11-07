@@ -14,7 +14,7 @@ import './App.css';
 import Pricing from './components/layout/Pricing';
 import FAQ from './components/layout/FAQ';
 import Footer from './components/layout/Footer';
-
+import { Element } from 'react-scroll';
 if (localStorage.token) {
 	setAuthToken(localStorage.token);
 }
@@ -35,9 +35,13 @@ function App() {
 					</Switch>
 					<Navbar />
 					<Route exact path="/" component={Landing} />
+					<Element name="pricing">
+						<Route exact path="/" component={Pricing} />
+					</Element>
+					<Element name="faq">
+						<Route exact path="/" component={FAQ} />
+					</Element>
 
-					<Pricing />
-					<FAQ />
 					<Footer />
 				</Fragment>
 			</Router>

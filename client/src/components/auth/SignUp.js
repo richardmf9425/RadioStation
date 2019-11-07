@@ -28,7 +28,7 @@ const SignUp = ({ setAlert, signup, isAuthenticated }) => {
 	}
 	return (
 		<Fragment>
-			<div className="container">
+			<div className=" auth-section container">
 				<div className="form-center">
 					<h1 className="large text-primary">Sign Up</h1>
 					<p className="lead">
