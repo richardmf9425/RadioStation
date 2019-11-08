@@ -5,6 +5,7 @@ import Landing from './components/layout/Landing';
 import Login from './components/auth/Login';
 import SignUp from './components/auth/SignUp';
 import Alert from './components/layout/Alert';
+import Payment from './components/layout/Payment';
 
 import { Provider } from 'react-redux';
 import store from './store';
@@ -15,6 +16,7 @@ import Pricing from './components/layout/Pricing';
 import FAQ from './components/layout/FAQ';
 import Footer from './components/layout/Footer';
 import { Element } from 'react-scroll';
+import PrivateRoute from './components/routing/PrivateRoute';
 
 if (localStorage.token) {
 	setAuthToken(localStorage.token);
@@ -29,12 +31,13 @@ function App() {
 		<Provider store={store}>
 			<Router>
 				<Fragment>
+					<Navbar />
 					<Alert />
 					<Switch>
 						<Route exact path="/signup" component={SignUp} />
 						<Route exact path="/login" component={Login} />
 					</Switch>
-					<Navbar />
+
 					<Route exact path="/" component={Landing} />
 					<Element name="pricing">
 						<Route exact path="/" component={Pricing} />
@@ -43,6 +46,7 @@ function App() {
 						<Route exact path="/" component={FAQ} />
 					</Element>
 
+					<PrivateRoute exact path="/checkout" component={Payment} />
 					<Footer />
 				</Fragment>
 			</Router>
