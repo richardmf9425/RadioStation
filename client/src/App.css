@@ -175,10 +175,15 @@ ul {
 }
 
 .alert {
+
+	text-align: center;
 	width: 50%;
-	position: relative;
+	position: absolute;
+	left: 0;
+	right: 0;
 	padding: 0.8rem;
-	margin: 6rem 0;
+	margin: 1rem auto;
+	z-index: 10;
 	opacity: 0.9;
 	background: var(--light-color);
 	color: #333;
@@ -596,6 +601,14 @@ button {
 	align-items: center;
 }
 
+
+
+
+
+
+
+
+
 /* Sign up and Signin*/
 
 .auth-section {
@@ -646,6 +659,11 @@ button {
 
 .footer .social-media {
 	font-size: 1.8rem;
+
+}
+
+.footer .social-media i {
+	padding: 0.5rem;
 }
 
 .footer .social-media i.fa-youtube {
