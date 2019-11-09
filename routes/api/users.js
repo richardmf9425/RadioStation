@@ -6,6 +6,7 @@ const gravatar = require('gravatar');
 const jwt = require('jsonwebtoken');
 const bcrypt = require('bcryptjs');
 const config = require('config');
+const sanitize = require('mongo-sanitize');
 
 //route POST api/users
 //desc  Register User
@@ -26,10 +27,10 @@ router.post(
 		const errors = validationResult(req);
 		if (!errors.isEmpty()) return res.status(400).json({ errors: errors.array() });
 
-		const { name, email, password } = req.body;
+		const { name, email, password } = sanitize(req.body);
 
 		try {
-			let user = await User.findOne({ email });
+			let user = await User.findOne({ email: { $in: [ email ] } });
 			if (user) {
 				return res.status(400).json({ errors: [ { msg: 'This user already exists' } ] });
 			}

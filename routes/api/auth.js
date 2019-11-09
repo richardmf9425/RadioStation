@@ -6,6 +6,7 @@ const { check, validationResult } = require('express-validator');
 const jwt = require('jsonwebtoken');
 const config = require('config');
 const bcrypt = require('bcryptjs');
+const sanitize = require('mongo-sanitize');
 
 //route GET api/auth
 router.get('/', auth, async (req, res) => {
@@ -33,10 +34,10 @@ router.post(
 		const errors = validationResult(req);
 		if (!errors.isEmpty()) return res.status(400).json({ errors: errors.array() });
 
-		const { email, password } = req.body;
+		const { email, password } = sanitize(req.body);
 
 		try {
-			let user = await User.findOne({ email });
+			let user = await User.findOne({ email: { $in: [ email ] } });
 
 			if (!user) {
 				return res.status(400).json({ errors: [ { msg: 'Wrong email and /or password. Please try again' } ] });
