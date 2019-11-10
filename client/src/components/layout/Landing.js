@@ -2,7 +2,7 @@ import React, { Fragment } from 'react';
 import { Link, Redirect } from 'react-router-dom';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
-
+import Zoom from 'react-reveal/Zoom';
 const Landing = ({ isAuthenticated }) => {
 	// if (isAuthenticated) {
 	// 	return <Redirect to="/dashboard" />;
@@ -17,14 +17,21 @@ const Landing = ({ isAuthenticated }) => {
 							<span className="landing-blue">At The Wellness</span>{' '}
 							<span className="landing-green">Network</span>{' '}
 						</h1>
+
 						<p className="lead"> There's healing at the Well</p>
-						<figure>
-							<figcaption>Live Right Now:</figcaption>
-							<audio className="audio" controls src="http://s3.voscast.com:9158/;stream1572801364375/1">
-								Your browser does not support the
-								<code>audio</code> element.
-							</audio>
-						</figure>
+						<Zoom>
+							<figure>
+								<figcaption>Live Right Now:</figcaption>
+								<audio
+									className="audio"
+									controls
+									src="http://s3.voscast.com:9158/;stream1572801364375/1"
+								>
+									Your browser does not support the
+									<code>audio</code> element.
+								</audio>
+							</figure>
+						</Zoom>
 					</div>
 				</div>
 			</section>

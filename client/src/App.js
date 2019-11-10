@@ -17,6 +17,7 @@ import FAQ from './components/layout/FAQ';
 import Footer from './components/layout/Footer';
 import { Element } from 'react-scroll';
 import PrivateRoute from './components/routing/PrivateRoute';
+import ThankYou from './components/layout/ThankYou';
 
 if (localStorage.token) {
 	setAuthToken(localStorage.token);
@@ -47,6 +48,7 @@ function App() {
 					</Element>
 
 					<PrivateRoute exact path="/checkout" component={Payment} />
+					<PrivateRoute exact path="/thank-you" component={ThankYou} />
 					<Footer />
 				</Fragment>
 			</Router>
