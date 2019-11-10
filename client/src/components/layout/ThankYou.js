@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Link, Redirect } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 function ThankYou() {
 	return (
@@ -10,7 +10,9 @@ function ThankYou() {
 					<h1>Thank you !</h1>
 					<p>Thanks for making a payment 🎉🎉🎉. </p>
 					<p>You should receive a confirmation email soon. </p>
-					<button className="go-home">go home</button>
+					<Link className="go-home" to="/">
+						go to home
+					</Link>
 				</div>
 				<div className="footer-like">
 					<p>

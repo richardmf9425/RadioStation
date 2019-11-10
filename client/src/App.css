@@ -721,11 +721,12 @@ ul {
 }
 
 .go-home {
+	display: inline-block;
 	color: #fff;
 	background: var(--primary-color);
 	border: none;
-	padding: 10px 50px;
-	margin: 30px 0;
+	margin-top: 2rem;
+	padding: 10px 40px;
 	border-radius: 10px;
 	text-transform: capitalize;
 	cursor: pointer;
@@ -745,7 +746,7 @@ ul {
 	padding: 4px;
 	color: rgb(0, 0, 0);
 	font-family: 'Source Sans Pro', sans-serif;
-	letter-spacing: 1px;
+	letter-spacing: 0.5px;
 }
 
 .footer-like p a {
