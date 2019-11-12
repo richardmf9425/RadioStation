@@ -451,7 +451,7 @@ ul {
 	box-shadow: 5px 5px 20px rgba(220, 236, 3, 0.4);
 }
 
-/* Pricing */
+/* Pricing Section */
 
 .pricing-section {
 	min-height: 100vh;
@@ -571,7 +571,7 @@ ul {
 	align-items: center;
 }
 
-/* Sign up and Signin*/
+/* Sign up and Sign in*/
 
 .auth-section {
 	height: 75vh;
