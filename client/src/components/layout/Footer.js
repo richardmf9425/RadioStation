@@ -5,7 +5,7 @@ function Footer() {
 	return (
 		<div className="footer">
 			<div className="subscribe">
-				Subscribe to Newsletter
+				Contact Us:
 				<br />
 				<a href="mailto:support@company.com"> support@company.com</a>
 			</div>
