@@ -9,6 +9,7 @@ function FileUploader() {
 				width="100%"
 				position="absolute"
 				border="none"
+				overflow="hidden"
 			/>
 		</div>
 	);
