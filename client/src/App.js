@@ -38,6 +38,8 @@ function App() {
 					<Switch>
 						<Route exact path="/signup" component={SignUp} />
 						<Route exact path="/login" component={Login} />
+						<PrivateRoute exact path="/checkout" component={Payment} />
+					<PrivateRoute exact path="/thank-you" component={ThankYou} />
 
 						<Route exact path="/" component={Landing} />
 						<Route component={NotFound} />
@@ -49,9 +51,7 @@ function App() {
 						<Route exact path="/" component={FAQ} />
 					</Element>
 
-					<PrivateRoute exact path="/checkout" component={Payment} />
-					<PrivateRoute exact path="/thank-you" component={ThankYou} />
-
+					
 					<Footer />
 				</Fragment>
 			</Router>
