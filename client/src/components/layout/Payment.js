@@ -5,7 +5,7 @@ import axios from 'axios';
 import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { Redirect, Route } from 'react-router-dom';
-
+import FileUploader from './FileUploader';
 toast.configure();
 function Payment() {
 	const [ fireRedirect, setFireRedirect ] = useState(false);
@@ -41,6 +41,7 @@ function Payment() {
 	return (
 		<Fragment>
 			<section className="payment-section">
+				<FileUploader />
 				<h1 className="payment-header">Click to Pay</h1>
 				<StripeCheckout
 					stripeKey="pk_test_sgOdphKru41G67PCT4BlZSAr00ccaRfmQZ"
