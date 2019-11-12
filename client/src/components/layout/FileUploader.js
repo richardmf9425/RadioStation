@@ -5,8 +5,8 @@ function FileUploader() {
 		<div className="file-uploader">
 			<iframe
 				src="https://script.google.com/macros/s/AKfycbwEtaOInyqzEJnNxj6BBPhPKZPFRzXPWbKXauQ1CxYBeTruBKX8/exec"
-				height="100%"
-				width="100%"
+				height="99%"
+				width="99%"
 				position="absolute"
 				border="none"
 			/>

@@ -451,7 +451,7 @@ ul {
 	box-shadow: 5px 5px 20px rgba(220, 236, 3, 0.4);
 }
 
-/* Pricing */
+/* Pricing Section */
 
 .pricing-section {
 	min-height: 100vh;
@@ -571,7 +571,7 @@ ul {
 	align-items: center;
 }
 
-/* Sign up and Signin*/
+/* Sign up and Sign in*/
 
 .auth-section {
 	height: 75vh;
@@ -603,7 +603,8 @@ ul {
 .payment-header {
 	z-index: 3;
 	margin: 20px;
-	font-size: 2.5rem;
+	font-size: 3.5rem;
+	color: white;
 }
 
 .file-uploader {
@@ -612,8 +613,8 @@ ul {
 	justify-content: center;
 	align-items: center;
 	z-index: 10;
-	height: 40%;
-	width: 50%;
+	height: 50%;
+	width: 40%;
 	overflow: hidden;
 }
 
