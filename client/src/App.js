@@ -19,6 +19,7 @@ import { Element } from 'react-scroll';
 import PrivateRoute from './components/routing/PrivateRoute';
 import ThankYou from './components/layout/ThankYou';
 import NotFound from './components/layout/NotFound';
+import Contact from './components/layout/Contact';
 
 if (localStorage.token) {
 	setAuthToken(localStorage.token);
@@ -39,9 +40,10 @@ function App() {
 						<Route exact path="/signup" component={SignUp} />
 						<Route exact path="/login" component={Login} />
 						<PrivateRoute exact path="/checkout" component={Payment} />
-					<PrivateRoute exact path="/thank-you" component={ThankYou} />
+						<PrivateRoute exact path="/thank-you" component={ThankYou} />
 
 						<Route exact path="/" component={Landing} />
+						<Route exact path="/contact" component={Contact} />
 						<Route component={NotFound} />
 					</Switch>
 					<Element name="pricing">
@@ -51,7 +53,6 @@ function App() {
 						<Route exact path="/" component={FAQ} />
 					</Element>
 
-					
 					<Footer />
 				</Fragment>
 			</Router>
