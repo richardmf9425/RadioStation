@@ -9,7 +9,7 @@ function Contact() {
 	const handleSubmit = (e) => {
 		e.preventDefault();
 		setFireRedirect(true);
-		toast.success('Your lost item has been successfully added!', {
+		toast.success('Thank you for contacting us! We will get back to you as soon as possible', {
 			bodyClassName: 'toast-background',
 			position: 'top-left',
 			autoClose: 4000,
