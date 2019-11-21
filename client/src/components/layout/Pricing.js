@@ -75,7 +75,7 @@ function Pricing({ auth: { isAuthenticated } }) {
 									<strong>1</strong> Account
 								</li>
 							</ul>
-							<Link to="/checkout">Buy Now</Link>
+							<Link to="/contact">Contact Us</Link>
 						</div>
 					</div>
 				</Zoom>

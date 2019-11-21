@@ -829,7 +829,7 @@ ul {
 
 .contact .head {
 	padding: 30px;
-	background-color: #00184f;
+	background-color: var(--secondary-color);
 	color: #fefefe;
 	overflow: hidden
 }
@@ -855,7 +855,7 @@ ul {
 	display: block;
 	margin-bottom: 5px;
 	letter-spacing: 1px;
-	color: #161921
+	color: var(--secondary-color);
 }
 
 .contact form>input {
@@ -881,23 +881,23 @@ ul {
 	margin: auto;
 	padding: 18px;
 	letter-spacing: 1px;
-	background: #00184f;
+	background: var(--primary-color);
 	color: #fefefe;
 	border: none;
 	border-radius: 40px;
 	-webkit-box-shadow: 0px 4px 8px rgba(165, 126, 157, 0.62);
 	box-shadow: 0px 4px 8px rgba(165, 126, 157, 0.62);
-	cursor: pointer
+	cursor: pointer;
 }
 
 .contact form>input:focus, .contact form>textarea:focus, .contact form button:focus {
-	outline: 0
+	outline: 0;
 }
 
 .contact .head h3, .contact form button {
-	text-transform: uppercase
+	text-transform: uppercase;
 }
 
 ::-webkit-input-placeholder {
-	color: #d9d5d6
+	color: #9b9b9b;
 }

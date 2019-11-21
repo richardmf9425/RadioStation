@@ -37,15 +37,30 @@ function Contact() {
 				</div>
 				<form action="https://www.enformed.io/awrr3hsj" method="POST">
 					<label>Name</label>
-					<input type="text" name="name" value={name} onChange={(e) => handleChange(e)} />
+					<input
+						type="text"
+						name="name"
+						value={name}
+						onChange={(e) => handleChange(e)}
+						placeholder="name"
+						required
+					/>
 					<label>Email</label>
-					<input type="email" name="email" value={email} onChange={(e) => handleChange(e)} />
+					<input
+						type="email"
+						name="email"
+						value={email}
+						onChange={(e) => handleChange(e)}
+						placeholder="john@doe.com"
+						required
+					/>
 					<label>Message</label>
 					<textarea
 						placeholder="Enter Your Message"
 						name="message"
 						value={message}
 						onChange={(e) => handleChange(e)}
+						required
 					/>
 
 					<button type="submit">Send Message</button>

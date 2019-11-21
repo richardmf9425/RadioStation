@@ -40,9 +40,7 @@ const Navbar = ({ auth: { isAuthenticated, loading, user }, logout }) => {
 				</Link>
 			</li>
 			<li>
-				<Link to="/" onClick={() => scrollTo('landing')}>
-					Contact
-				</Link>
+				<Link to="/contact">Contact</Link>
 			</li>
 			<li>
 				<Link to="/" onClick={() => scrollTo('faq')}>
