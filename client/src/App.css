@@ -188,32 +188,50 @@ ul {
 	color: #333;
 }
 
-.btn-primary, .bg-primary, .badge-primary, .alert-primary {
+.btn-primary,
+.bg-primary,
+.badge-primary,
+.alert-primary {
 	background: var(--primary-color);
 	color: #fff;
 }
 
-.btn-light, .bg-light, .badge-light, .alert-light {
+.btn-light,
+.bg-light,
+.badge-light,
+.alert-light {
 	background: var(--light-color);
 	color: #333;
 }
 
-.btn-dark, .bg-dark, .badge-dark, .alert-dark {
+.btn-dark,
+.bg-dark,
+.badge-dark,
+.alert-dark {
 	background: var(--dark-color);
 	color: #fff;
 }
 
-.btn-danger, .bg-danger, .badge-danger, .alert-danger {
+.btn-danger,
+.bg-danger,
+.badge-danger,
+.alert-danger {
 	background: var(--danger-color);
 	color: #fff;
 }
 
-.btn-success, .bg-success, .badge-success, .alert-success {
+.btn-success,
+.bg-success,
+.badge-success,
+.alert-success {
 	background: var(--success-color);
 	color: #fff;
 }
 
-.btn-white, .bg-white, .badge-white, .alert-white {
+.btn-white,
+.bg-white,
+.badge-white,
+.alert-white {
 	background: #fff;
 	color: #333;
 	border: #ccc solid 1px;
@@ -223,7 +241,8 @@ ul {
 	opacity: 0.8;
 }
 
-.bg-light, .badge-light {
+.bg-light,
+.badge-light {
 	border: #ccc solid 1px;
 }
 
@@ -255,7 +274,8 @@ ul {
 
 /* Loading Spinner */
 
-.loader, .loader:after {
+.loader,
+.loader:after {
 	border-radius: 50%;
 	width: 10em;
 	height: 10em;
@@ -324,7 +344,12 @@ ul {
 	color: rgb(255, 35, 6);
 }
 
-.form input[type='text'], .form input[type='email'], .form input[type='password'], .form input[type='date'], .form select, .form textarea {
+.form input[type='text'],
+.form input[type='email'],
+.form input[type='password'],
+.form input[type='date'],
+.form select,
+.form textarea {
 	display: block;
 	width: 100%;
 	padding: 0.4rem;
@@ -333,7 +358,8 @@ ul {
 	border-radius: .25rem;
 }
 
-.form input[type='submit'], button {
+.form input[type='submit'],
+button {
 	font: inherit;
 }
 
@@ -366,7 +392,8 @@ ul {
 	color: #0077b5;
 }
 
-.table th, .table td {
+.table th,
+.table td {
 	padding: 1rem;
 	text-align: left;
 }
@@ -746,7 +773,7 @@ ul {
 
 .footer-like {
 	margin-top: auto;
-	background: #D7E6FE;
+	background: #d7e6fe;
 	padding: 6px;
 	text-align: center;
 	border-bottom-left-radius: 10px;
@@ -767,7 +794,7 @@ ul {
 	font-weight: 600;
 }
 
-@media (min-width:200px) {
+@media (min-width: 200px) {
 	.content {
 		/* max-width: 1000px; */
 		margin: 0 auto;
@@ -817,7 +844,7 @@ ul {
 	background: -moz-radial-gradient(center, ellipse cover, #a7cfdf 11%, #23538a 91%);
 	background: -webkit-radial-gradient(center, ellipse cover, #a7cfdf 11%, #23538a 91%);
 	background: radial-gradient(ellipse at center, #a7cfdf 11%, #23538a 91%);
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a7cfdf', endColorstr='#23538a', GradientType=1);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#a7cfdf', endColorstr='#23538a', GradientType=1);
 	font-family: Arial, Tahoma;
 }
 
@@ -825,20 +852,21 @@ ul {
 	width: 400px;
 	margin: 50px auto;
 	box-shadow: 0 0 15px 3px rgba(0, 0, 0, .2);
+	margin-top: 10%;
 }
 
 .contact .head {
 	padding: 30px;
 	background-color: var(--secondary-color);
 	color: #fefefe;
-	overflow: hidden
+	overflow: hidden;
 }
 
 .contact .head h3 {
 	margin: 0;
 	float: left;
 	font-size: 18px;
-	letter-spacing: 2px
+	letter-spacing: 2px;
 }
 
 .contact .head i {
@@ -848,7 +876,7 @@ ul {
 
 .contact form {
 	padding: 30px;
-	background-color: #fff
+	background-color: #fff;
 }
 
 .contact form label {
@@ -858,21 +886,22 @@ ul {
 	color: var(--secondary-color);
 }
 
-.contact form>input {
+.contact form > input {
 	height: 32px;
-	margin-bottom: 20px
+	margin-bottom: 20px;
 }
 
-.contact form>input, .contact form>textarea {
+.contact form > input,
+.contact form > textarea {
 	width: 100%;
 	padding: 10px;
-	border: 1px solid #eee
+	border: 1px solid #eee;
 }
 
-.contact form>textarea {
+.contact form > textarea {
 	height: 70px;
 	margin-bottom: 40px;
-	resize: none
+	resize: none;
 }
 
 .contact form button {
@@ -890,11 +919,14 @@ ul {
 	cursor: pointer;
 }
 
-.contact form>input:focus, .contact form>textarea:focus, .contact form button:focus {
+.contact form > input:focus,
+.contact form > textarea:focus,
+.contact form button:focus {
 	outline: 0;
 }
 
-.contact .head h3, .contact form button {
+.contact .head h3,
+.contact form button {
 	text-transform: uppercase;
 }
 
