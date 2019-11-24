@@ -5,29 +5,27 @@ const config = {
 	bucketName: 'atthewellnessnetwork',
 	dirName: 'uploads',
 	region: 'us-east-1',
-	accessKeyId: 'AKIAS264P6ATCSGV3RIW',
-	secretAccessKey: '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',
-}
+	accessKeyId: process.env.REACT_APP_AWS_KEY_ID,
+	secretAccessKey: process.env.REACT_APP_AWS_SECRET_KEY
+};
 
 function FileUploader() {
+	console.log('test' + process.env.REACT_APP_AWS_KEY_ID);
 	const uploadFile = (e) => {
 		console.log(e.target.files[0]);
 		ReactS3.uploadFile(e.target.files[0], config)
-		.then((data) => {
-			console.log(data);
-		})
-		.catch((err) => {
-			console.error(err);
-			alert(err);
-		})
-	}
+			.then((data) => {
+				console.log(data);
+			})
+			.catch((err) => {
+				console.error(err);
+				alert(err.message);
+			});
+	};
 
 	return (
 		<div className="file-uploader">
-			<input 
-			type="file"
-			onChange={uploadFile}>
-			</input>
+			<input type="file" onChange={uploadFile} />
 		</div>
 	);
 }
