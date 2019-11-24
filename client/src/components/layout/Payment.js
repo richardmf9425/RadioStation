@@ -41,8 +41,9 @@ function Payment() {
 	return (
 		<Fragment>
 			<section className="payment-section">
+				<p className="upload-text">Upload your files below:</p>
 				<FileUploader />
-				<h1 className="payment-header">Click to Pay</h1>
+				<p className="payment-header">Click to Pay</p>
 				<StripeCheckout
 					stripeKey="pk_test_sgOdphKru41G67PCT4BlZSAr00ccaRfmQZ"
 					token={handleToken}

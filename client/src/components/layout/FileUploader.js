@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import ReactS3 from 'react-s3';
 
 const config = {
@@ -10,7 +10,6 @@ const config = {
 };
 
 function FileUploader() {
-	console.log('test' + process.env.REACT_APP_AWS_KEY_ID);
 	const uploadFile = (e) => {
 		console.log(e.target.files[0]);
 		ReactS3.uploadFile(e.target.files[0], config)
@@ -25,7 +24,7 @@ function FileUploader() {
 
 	return (
 		<div className="file-uploader">
-			<input type="file" onChange={uploadFile} />
+			<input type="file" className="file-picker" onChange={uploadFile} />
 		</div>
 	);
 }

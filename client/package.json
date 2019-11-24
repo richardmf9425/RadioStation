@@ -8,6 +8,7 @@
     "moment": "^2.24.0",
     "react": "^16.11.0",
     "react-dom": "^16.11.0",
+    "react-filepond": "^7.0.1",
     "react-moment": "^0.9.6",
     "react-redux": "^7.1.1",
     "react-reveal": "^1.2.2",

@@ -188,50 +188,32 @@ ul {
 	color: #333;
 }
 
-.btn-primary,
-.bg-primary,
-.badge-primary,
-.alert-primary {
+.btn-primary, .bg-primary, .badge-primary, .alert-primary {
 	background: var(--primary-color);
 	color: #fff;
 }
 
-.btn-light,
-.bg-light,
-.badge-light,
-.alert-light {
+.btn-light, .bg-light, .badge-light, .alert-light {
 	background: var(--light-color);
 	color: #333;
 }
 
-.btn-dark,
-.bg-dark,
-.badge-dark,
-.alert-dark {
+.btn-dark, .bg-dark, .badge-dark, .alert-dark {
 	background: var(--dark-color);
 	color: #fff;
 }
 
-.btn-danger,
-.bg-danger,
-.badge-danger,
-.alert-danger {
+.btn-danger, .bg-danger, .badge-danger, .alert-danger {
 	background: var(--danger-color);
 	color: #fff;
 }
 
-.btn-success,
-.bg-success,
-.badge-success,
-.alert-success {
+.btn-success, .bg-success, .badge-success, .alert-success {
 	background: var(--success-color);
 	color: #fff;
 }
 
-.btn-white,
-.bg-white,
-.badge-white,
-.alert-white {
+.btn-white, .bg-white, .badge-white, .alert-white {
 	background: #fff;
 	color: #333;
 	border: #ccc solid 1px;
@@ -241,8 +223,7 @@ ul {
 	opacity: 0.8;
 }
 
-.bg-light,
-.badge-light {
+.bg-light, .badge-light {
 	border: #ccc solid 1px;
 }
 
@@ -274,8 +255,7 @@ ul {
 
 /* Loading Spinner */
 
-.loader,
-.loader:after {
+.loader, .loader:after {
 	border-radius: 50%;
 	width: 10em;
 	height: 10em;
@@ -344,12 +324,7 @@ ul {
 	color: rgb(255, 35, 6);
 }
 
-.form input[type='text'],
-.form input[type='email'],
-.form input[type='password'],
-.form input[type='date'],
-.form select,
-.form textarea {
+.form input[type='text'], .form input[type='email'], .form input[type='password'], .form input[type='date'], .form select, .form textarea {
 	display: block;
 	width: 100%;
 	padding: 0.4rem;
@@ -358,8 +333,7 @@ ul {
 	border-radius: .25rem;
 }
 
-.form input[type='submit'],
-button {
+.form input[type='submit'], button {
 	font: inherit;
 }
 
@@ -392,8 +366,7 @@ button {
 	color: #0077b5;
 }
 
-.table th,
-.table td {
+.table th, .table td {
 	padding: 1rem;
 	text-align: left;
 }
@@ -608,12 +581,13 @@ button {
 
 .payment-section {
 	height: 85vh;
+	width: 100%;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	flex-direction: column;
 	flex-wrap: wrap;
-	background: url('./resources/seashore-payement.jpg') no-repeat center center/cover;
+	background: url('./resources/amazing-balance-blur-boulder-312839.jpg') no-repeat center center/cover;
 }
 
 .payment-section::before {
@@ -630,8 +604,13 @@ button {
 .payment-header {
 	z-index: 3;
 	margin: 20px;
-	font-size: 3.5rem;
+	font-size: 1.5rem;
 	color: white;
+}
+
+.stripe-pay-button {
+	background-color: red;
+	z-index: 10;
 }
 
 .file-uploader {
@@ -640,9 +619,18 @@ button {
 	justify-content: center;
 	align-items: center;
 	z-index: 10;
-	height: 50%;
-	width: 40%;
 	overflow: hidden;
+	color: white;
+}
+
+.upload-text {
+	z-index: 10;
+	font-size: 1vw;
+	color: var(--primary-color)
+}
+
+.file-picker {
+	padding: 20px;
 }
 
 /* Footer */
@@ -886,19 +874,18 @@ button {
 	color: var(--secondary-color);
 }
 
-.contact form > input {
+.contact form>input {
 	height: 32px;
 	margin-bottom: 20px;
 }
 
-.contact form > input,
-.contact form > textarea {
+.contact form>input, .contact form>textarea {
 	width: 100%;
 	padding: 10px;
 	border: 1px solid #eee;
 }
 
-.contact form > textarea {
+.contact form>textarea {
 	height: 70px;
 	margin-bottom: 40px;
 	resize: none;
@@ -919,14 +906,11 @@ button {
 	cursor: pointer;
 }
 
-.contact form > input:focus,
-.contact form > textarea:focus,
-.contact form button:focus {
+.contact form>input:focus, .contact form>textarea:focus, .contact form button:focus {
 	outline: 0;
 }
 
-.contact .head h3,
-.contact form button {
+.contact .head h3, .contact form button {
 	text-transform: uppercase;
 }
 
