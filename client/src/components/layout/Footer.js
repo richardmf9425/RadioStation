@@ -22,10 +22,10 @@ function Footer() {
 					{' '}
 					<i className="fab fa-youtube" />
 				</a>
-				<Link>
+				<a href="https://instagram.com">
 					{' '}
 					<i className="fab fa-instagram" />
-				</Link>
+				</a>
 			</div>
 		</div>
 	);
