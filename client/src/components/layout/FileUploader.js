@@ -12,7 +12,6 @@ const config = {
 function FileUploader() {
 	const [ fileName, setFileName ] = useState('');
 	const uploadFile = (e) => {
-		console.log(e.target.files[0]);
 		setFileName(e.target.files[0].name);
 		ReactS3.uploadFile(e.target.files[0], config)
 			.then((data) => {
