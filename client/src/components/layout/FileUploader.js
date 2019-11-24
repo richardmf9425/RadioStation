@@ -1,33 +1,36 @@
-import React from 'react';
+import React, { useState } from 'react';
 import ReactS3 from 'react-s3';
 
 const config = {
 	bucketName: 'atthewellnessnetwork',
 	dirName: 'uploads',
 	region: 'us-east-1',
-	accessKeyId: 'AKIAS264P6ATCSGV3RIW',
-	secretAccessKey: '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',
-}
+	accessKeyId: process.env.REACT_APP_AWS_KEY_ID,
+	secretAccessKey: process.env.REACT_APP_AWS_SECRET_KEY
+};
 
 function FileUploader() {
+	const [ fileName, setFileName ] = useState('');
 	const uploadFile = (e) => {
-		console.log(e.target.files[0]);
+		setFileName(e.target.files[0].name);
 		ReactS3.uploadFile(e.target.files[0], config)
-		.then((data) => {
-			console.log(data);
-		})
-		.catch((err) => {
-			console.error(err);
-			alert(err);
-		})
-	}
+			.then((data) => {
+				console.log(data);
+			})
+			.catch((err) => {
+				console.error(err);
+				alert(err.message);
+			});
+	};
 
 	return (
 		<div className="file-uploader">
-			<input 
-			type="file"
-			onChange={uploadFile}>
-			</input>
+			{/* <input type="file" className="file-picker" onChange={uploadFile} /> */}
+			<div className="browse-wrap">
+				<div className="title">Choose a file to upload</div>
+				<input type="file" name="upload" class="upload" title="Choose a file to upload" onChange={uploadFile} />
+			</div>
+			<span className="upload-path">{fileName}</span>
 		</div>
 	);
 }

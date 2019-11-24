@@ -20,7 +20,8 @@ import PrivateRoute from './components/routing/PrivateRoute';
 import ThankYou from './components/layout/ThankYou';
 import NotFound from './components/layout/NotFound';
 import Contact from './components/layout/Contact';
-
+const dotenv = require('dotenv');
+dotenv.config();
 if (localStorage.token) {
 	setAuthToken(localStorage.token);
 }
