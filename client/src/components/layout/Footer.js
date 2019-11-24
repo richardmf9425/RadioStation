@@ -14,14 +14,14 @@ function Footer() {
 				<h3>Copyright 2019 &copy; All Rights Reserved.</h3>
 			</div>
 			<div className="social-media">
-				<Link>
+				<a href="https://www.facebook.com/WellnessRadioTV" target="_blank">
 					{' '}
 					<i className="fab fa-facebook" />
-				</Link>
-				<Link>
+				</a>
+				<a href="https://www.youtube.com/channel/UCyQvBiq-ANtNJNjAV6UpWGg" target="_blank">
 					{' '}
 					<i className="fab fa-youtube" />
-				</Link>
+				</a>
 				<Link>
 					{' '}
 					<i className="fab fa-instagram" />
