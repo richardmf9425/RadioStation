@@ -917,6 +917,20 @@ span.upload-path {
 	.navbar .welcome {
 		display: none;
 	}
+	/* Footer */
+	.footer .social-media {
+		font-size: 1.8rem;
+	}
+
+	.footer .social-media i {
+		padding: 0.5rem;
+	}
+	.footer {
+		flex-direction: column;
+	}
+	.footer .info-copyright h3 {
+		font-size: 0.8rem;
+	}
 }
 
 /* Thank You Page */
