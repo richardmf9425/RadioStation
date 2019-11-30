@@ -188,50 +188,32 @@ ul {
 	color: #333;
 }
 
-.btn-primary,
-.bg-primary,
-.badge-primary,
-.alert-primary {
+.btn-primary, .bg-primary, .badge-primary, .alert-primary {
 	background: var(--primary-color);
 	color: #fff;
 }
 
-.btn-light,
-.bg-light,
-.badge-light,
-.alert-light {
+.btn-light, .bg-light, .badge-light, .alert-light {
 	background: var(--light-color);
 	color: #333;
 }
 
-.btn-dark,
-.bg-dark,
-.badge-dark,
-.alert-dark {
+.btn-dark, .bg-dark, .badge-dark, .alert-dark {
 	background: var(--dark-color);
 	color: #fff;
 }
 
-.btn-danger,
-.bg-danger,
-.badge-danger,
-.alert-danger {
+.btn-danger, .bg-danger, .badge-danger, .alert-danger {
 	background: var(--danger-color);
 	color: #fff;
 }
 
-.btn-success,
-.bg-success,
-.badge-success,
-.alert-success {
+.btn-success, .bg-success, .badge-success, .alert-success {
 	background: var(--success-color);
 	color: #fff;
 }
 
-.btn-white,
-.bg-white,
-.badge-white,
-.alert-white {
+.btn-white, .bg-white, .badge-white, .alert-white {
 	background: #fff;
 	color: #333;
 	border: #ccc solid 1px;
@@ -241,8 +223,7 @@ ul {
 	opacity: 0.8;
 }
 
-.bg-light,
-.badge-light {
+.bg-light, .badge-light {
 	border: #ccc solid 1px;
 }
 
@@ -274,8 +255,7 @@ ul {
 
 /* Loading Spinner */
 
-.loader,
-.loader:after {
+.loader, .loader:after {
 	border-radius: 50%;
 	width: 10em;
 	height: 10em;
@@ -344,12 +324,7 @@ ul {
 	color: rgb(255, 35, 6);
 }
 
-.form input[type='text'],
-.form input[type='email'],
-.form input[type='password'],
-.form input[type='date'],
-.form select,
-.form textarea {
+.form input[type='text'], .form input[type='email'], .form input[type='password'], .form input[type='date'], .form select, .form textarea {
 	display: block;
 	width: 100%;
 	padding: 0.4rem;
@@ -358,8 +333,7 @@ ul {
 	border-radius: .25rem;
 }
 
-.form input[type='submit'],
-button {
+.form input[type='submit'], button {
 	font: inherit;
 }
 
@@ -392,8 +366,7 @@ button {
 	color: #0077b5;
 }
 
-.table th,
-.table td {
+.table th, .table td {
 	padding: 1rem;
 	text-align: left;
 }
@@ -646,8 +619,7 @@ button {
 	border-bottom: 1px solid #e5e5e5;
 }
 
-.accordion a:hover,
-.accordion a:hover::after {
+.accordion a:hover, .accordion a:hover::after {
 	cursor: pointer;
 	color: #00a6ff;
 }
@@ -855,6 +827,7 @@ span.upload-path {
 	flex-direction: row;
 	text-align: center;
 }
+
 .footer .subscribe a {
 	color: #00ff4c;
 }
@@ -921,7 +894,6 @@ span.upload-path {
 	.footer .social-media {
 		font-size: 1.8rem;
 	}
-
 	.footer .social-media i {
 		padding: 0.5rem;
 	}
@@ -1101,19 +1073,18 @@ span.upload-path {
 	color: var(--secondary-color);
 }
 
-.contact form > input {
+.contact form>input {
 	height: 32px;
 	margin-bottom: 20px;
 }
 
-.contact form > input,
-.contact form > textarea {
+.contact form>input, .contact form>textarea {
 	width: 100%;
 	padding: 10px;
 	border: 1px solid #eee;
 }
 
-.contact form > textarea {
+.contact form>textarea {
 	height: 70px;
 	margin-bottom: 40px;
 	resize: none;
@@ -1134,14 +1105,11 @@ span.upload-path {
 	cursor: pointer;
 }
 
-.contact form > input:focus,
-.contact form > textarea:focus,
-.contact form button:focus {
+.contact form>input:focus, .contact form>textarea:focus, .contact form button:focus {
 	outline: 0;
 }
 
-.contact .head h3,
-.contact form button {
+.contact .head h3, .contact form button {
 	text-transform: uppercase;
 }
 
