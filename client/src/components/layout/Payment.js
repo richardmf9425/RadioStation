@@ -6,6 +6,7 @@ import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { Redirect, Route } from 'react-router-dom';
 import FileUploader from './FileUploader';
+
 toast.configure();
 function Payment() {
 	const [ fireRedirect, setFireRedirect ] = useState(false);
