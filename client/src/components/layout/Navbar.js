@@ -1,4 +1,4 @@
-import React, { Fragment } from 'react';
+import React, { Fragment, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { connect } from 'react-redux';
 import { logout } from '../../actions/auth';
@@ -41,6 +41,9 @@ const Navbar = ({ auth: { isAuthenticated, loading, user }, logout }) => {
 			</li>
 			<li>
 				<Link to="/contact">Contact</Link>
+			</li>
+			<li>
+				<Link to="/appointment">Book Appt.</Link>
 			</li>
 
 			<li>

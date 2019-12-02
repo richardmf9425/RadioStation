@@ -558,6 +558,29 @@ ul {
 	}
 }
 
+/* appointment Calendly Section  */
+
+.calendly-style {
+	width: 700px;
+	height: 560px;
+	padding: 50px;
+}
+
+.calendly-inline-widget {
+	max-width: 70vw !important;
+	max-height: 60vh !important;
+	padding: 50px !important;
+}
+
+.calendly-badge-widget {
+	right: auto !important;
+	left: 20px !important;
+	bottom: 30px !important;
+	border-radius: 25px !important;
+	border-color: var(--primary-color) !important;
+	border: 2px solid;
+}
+
 /* FAQ */
 
 .FAQ-section {

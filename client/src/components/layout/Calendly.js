@@ -8,11 +8,9 @@ function Calendly() {
 		head.appendChild(script);
 	});
 	return (
-		<div
-			className="calendly-inline-widget"
-			data-url="https://calendly.com/richardmf9425"
-			style={{ minWidth: '320px', height: '630px' }}
-		/>
+		<section className="payment-section">
+			<div className="calendly-inline-widget calendly-style" data-url="https://calendly.com/richardmf9425"  />
+		</section>
 	);
 }
 

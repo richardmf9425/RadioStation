@@ -20,6 +20,7 @@ import PrivateRoute from './components/routing/PrivateRoute';
 import ThankYou from './components/layout/ThankYou';
 import NotFound from './components/layout/NotFound';
 import Contact from './components/layout/Contact';
+import Calendly from './components/layout/Calendly';
 const dotenv = require('dotenv');
 dotenv.config();
 if (localStorage.token) {
@@ -45,6 +46,7 @@ function App() {
 
 						<Route exact path="/" component={Landing} />
 						<Route exact path="/contact" component={Contact} />
+						<Route exact path="/appointment" component={Calendly} />
 						<Route component={NotFound} />
 					</Switch>
 					<Element name="pricing">
