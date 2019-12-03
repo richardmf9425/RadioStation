@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
 
 function FAQ() {
-	const [ active, toggleActive ] = useState(false);
-	const [ active1, toggleActive1 ] = useState(false);
-	const [ active2, toggleActive2 ] = useState(false);
-	const [ active3, toggleActive3 ] = useState(false);
-	const [ active4, toggleActive4 ] = useState(false);
+	const [active, toggleActive] = useState(false);
+	const [active1, toggleActive1] = useState(false);
+	const [active2, toggleActive2] = useState(false);
+	const [active3, toggleActive3] = useState(false);
+	const [active4, toggleActive4] = useState(false);
 
 	return (
 		<div className="FAQ-section ">
@@ -27,7 +27,7 @@ function FAQ() {
 					</div>
 					<div className="accordion-item">
 						<a onClick={() => toggleActive1(!active1)} className={active1 ? 'active' : ''}>
-							Why is the sky blue?
+							How do I schedule an appointment?
 						</a>
 						<div className={active1 ? ' content active' : 'content'}>
 							<p>
@@ -39,7 +39,7 @@ function FAQ() {
 					</div>
 					<div className="accordion-item">
 						<a onClick={() => toggleActive2(!active2)} className={active2 ? 'active' : ''}>
-							Why is the sky blue?
+							Do I need to create an account before I can upload files?
 						</a>
 						<div className={active2 ? ' content active' : 'content'}>
 							<p>
@@ -51,7 +51,7 @@ function FAQ() {
 					</div>
 					<div className="accordion-item">
 						<a onClick={() => toggleActive3(!active3)} className={active3 ? 'active' : ''}>
-							Why is the sky blue?
+							What events are there for kids?
 						</a>
 						<div className={active3 ? ' content active' : 'content'}>
 							<p>
@@ -63,7 +63,7 @@ function FAQ() {
 					</div>
 					<div className="accordion-item">
 						<a onClick={() => toggleActive4(!active4)} className={active4 ? 'active' : ''}>
-							Why is the sky blue?
+							Where is At the Wellness Network located?
 						</a>
 						<div className={active4 ? ' content active' : 'content'}>
 							<p>
