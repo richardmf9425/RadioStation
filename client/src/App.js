@@ -9,7 +9,7 @@ import Payment from './components/layout/Payment';
 
 import { Provider } from 'react-redux';
 import store from './store';
-import { loadUser } from './actions/auth';
+import { loadUser, forgotPasword } from './actions/auth';
 import setAuthToken from './utils/setAuthToken';
 import './App.css';
 import Pricing from './components/layout/Pricing';
@@ -20,6 +20,7 @@ import PrivateRoute from './components/routing/PrivateRoute';
 import ThankYou from './components/layout/ThankYou';
 import NotFound from './components/layout/NotFound';
 import Contact from './components/layout/Contact';
+import passwordReset from './components/auth/passwordReset';
 
 if (localStorage.token) {
 	setAuthToken(localStorage.token);
@@ -37,6 +38,7 @@ function App() {
 					<Navbar />
 					<Alert />
 					<Switch>
+						<Route exact path="/forgot-password" component={passwordReset} />
 						<Route exact path="/signup" component={SignUp} />
 						<Route exact path="/login" component={Login} />
 						<PrivateRoute exact path="/checkout" component={Payment} />

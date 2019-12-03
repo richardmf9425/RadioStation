@@ -19,7 +19,8 @@ app.get('/', (req, res) => {
 //Routes
 app.use('/api/users', require('./routes/api/users'));
 app.use('/api/auth', require('./routes/api/auth'));
-
+app.use('/api', require('./routes/api/auth'));
+//app.use('/api/auth')
 // Checkout with stripe route
 
 app.post('/api/checkout', async (req, res) => {

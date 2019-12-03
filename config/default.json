@@ -1,4 +1,9 @@
 {
-    "mongoURI": "mongodb+srv://wellnessnetwork:wellness@cluster0-jjl4g.mongodb.net/test?retryWrites=true&w=majority",
-    "JWTSecret": "wellnessnetworkradiostation"
+    //"mongoURI": "mongodb+srv://wellnessnetwork:wellness@cluster0-jjl4g.mongodb.net/test?retryWrites=true&w=majority",
+    "mongoURI": "mongodb+srv://guest:CEN3031@cluster0-vezm5.mongodb.net/test?retryWrites=true&w=majority",
+    "JWTSecret": "wellnessnetworkradiostation",
+    "JWT_RESET_PASSWORD": "i4nr3iu4hrineioug3nm2f3opijf2oijn2iug3nfiun2rifn2fi4nfi",
+    "EMAIL_FROM": "orileibovici@ufl.edu",
+    "CLIENT_URL": "http://localhost:3000",
+    "SENDGRID_API_KEY":"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"
 }

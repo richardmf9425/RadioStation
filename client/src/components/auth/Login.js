@@ -59,7 +59,7 @@ const Login = ({ login, isAuthenticated }) => {
 					<p className="my-1">
 						Don't have an account? <Link to="/signup">Create Account </Link>
 					</p>
-					<Link to="/signup">Forgot password? </Link>
+					<Link to="/forgot-password">Forgot password? </Link>
 					
 				</div>
 			</div>
