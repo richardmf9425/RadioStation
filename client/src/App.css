@@ -265,7 +265,7 @@ ul {
 /* Overlay */
 
 .dark-overlay {
-	background-color: rgba(0, 0, 0, 0.7);
+	background-color: rgba(0, 0, 0, 0.452);
 	top: 0;
 	left: 0;
 	width: 100%;
@@ -406,8 +406,8 @@ button {
 
 .logo {
 	width: 150px;
-	height: 60px;
-	background: url('./resources/transparentlogo.jpg') no-repeat center center/cover;
+	height: 70px;
+	background: url('./resources/logo.jpg') no-repeat center center/cover;
 	border-radius: 0px;
 }
 
