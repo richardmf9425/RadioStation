@@ -20,9 +20,6 @@ import PrivateRoute from './components/routing/PrivateRoute';
 import ThankYou from './components/layout/ThankYou';
 import NotFound from './components/layout/NotFound';
 import Contact from './components/layout/Contact';
-
-import Player from './components/layout/Player';
-
 import Calendly from './components/layout/Calendly';
 
 const dotenv = require('dotenv');
