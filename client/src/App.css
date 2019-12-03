@@ -407,8 +407,8 @@ button {
 .logo {
 	width: 150px;
 	height: 60px;
-	background: url('./resources/logo.jpg') no-repeat center center/cover;
-	border-radius: 22px;
+	background: url('./resources/transparentlogo.jpg') no-repeat center center/cover;
+	border-radius: 0px;
 }
 
 .navbar {
@@ -417,7 +417,7 @@ button {
 	align-items: center;
 	padding: 0.7rem 2rem;
 	position: fixed;
-	background-color: rgb(20, 56, 95);
+	background-color: white;
 	z-index: 1;
 	width: 100%;
 	top: 0;
@@ -430,7 +430,7 @@ button {
 }
 
 .navbar a {
-	color: #fff;
+	color: rgb(20, 56, 95);
 	padding: 0.45rem;
 	margin: 0 0.25rem;
 }
