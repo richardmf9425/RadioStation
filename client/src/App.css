@@ -417,13 +417,8 @@ button {
 	align-items: center;
 	padding: 0.7rem 2rem;
 	position: fixed;
-<<<<<<< HEAD
 	background-color: white;
 	z-index: 1;
-=======
-	background-color: rgb(20, 56, 95);
-	z-index: 100;
->>>>>>> 487fcba4e0fc1c1af383cdb973487a03942e7f27
 	width: 100%;
 	top: 0;
 	border-bottom: solid 1px var(--primary-color);
