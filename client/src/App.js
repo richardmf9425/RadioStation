@@ -20,6 +20,7 @@ import PrivateRoute from './components/routing/PrivateRoute';
 import ThankYou from './components/layout/ThankYou';
 import NotFound from './components/layout/NotFound';
 import Contact from './components/layout/Contact';
+import Player from './components/layout/Player';
 const dotenv = require('dotenv');
 dotenv.config();
 if (localStorage.token) {
@@ -47,6 +48,9 @@ function App() {
 						<Route exact path="/contact" component={Contact} />
 						<Route component={NotFound} />
 					</Switch>
+					<Element>
+						<Route exact path="/" component={Player} />
+					</Element>
 					<Element name="pricing">
 						<Route exact path="/" component={Pricing} />
 					</Element>
