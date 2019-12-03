@@ -75,6 +75,23 @@ function FAQ() {
 					</div>
 				</div>
 			</div>
+			<p className="youtube-header">
+				Follow us on YouTube <i className="fab fa-youtube" />
+			</p>
+			<iframe
+				style={{
+					position: 'absolute',
+					bottom: '5%',
+
+					left: 'auto',
+					width: '20vw',
+					minWidth: '20vw',
+					height: '20%'
+				}}
+				allowfullscreen="allowfullscreen"
+				src={`https://www.youtube.com/embed/YcAaJ8vC_54`}
+				frameBorder="0"
+			/>
 		</div>
 	);
 }
