@@ -20,11 +20,8 @@ import PrivateRoute from './components/routing/PrivateRoute';
 import ThankYou from './components/layout/ThankYou';
 import NotFound from './components/layout/NotFound';
 import Contact from './components/layout/Contact';
-<<<<<<< HEAD
 import Player from './components/layout/Player';
-=======
 import Calendly from './components/layout/Calendly';
->>>>>>> 3a3cc58b8c990da9ba1ad23cb5c2714db710fc03
 const dotenv = require('dotenv');
 dotenv.config();
 if (localStorage.token) {
