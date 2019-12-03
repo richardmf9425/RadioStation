@@ -50,9 +50,9 @@ function App() {
 						<Route exact path="/appointment" component={Calendly} />
 						<Route component={NotFound} />
 					</Switch>
-					<Element name="player">
+					{/* <Element name="player">
 						<Route exact path="/" component={Player} />
-					</Element>
+					</Element> */}
 					<Element name="pricing">
 						<Route exact path="/" component={Pricing} />
 					</Element>
