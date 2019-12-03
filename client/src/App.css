@@ -39,8 +39,8 @@ ul {
 	margin: auto;
 	overflow: hidden;
 	padding: 0.2rem;
-	margin-top: 6rem;
-	margin-bottom: 3rem;
+	/* margin-top: 3rem; */
+	margin-bottom: -3rem;
 }
 
 /* Text Styles*/
@@ -609,17 +609,20 @@ button {
 .calendly-inline-widget {
 	max-width: 70vw !important;
 	max-height: 60vh !important;
-	padding: 50px !important;
+	/* padding: 50px !important; */
 }
 
 .calendly-badge-widget {
-	right: auto !important;
-	left: 20px !important;
-	bottom: 30px !important;
+	/* right: auto !important;
+	left: 20px !important; */
+	right: 35px !important;
+	bottom: 50px !important;
 	border-radius: 25px !important;
 	border-color: var(--primary-color) !important;
 	border: 2px solid;
 	width: 160px;
+	position: absolute !important;
+	z-index: 0 !important;
 }
 
 /* FAQ */
@@ -756,7 +759,9 @@ button {
 /* Sign up and Sign in*/
 
 .auth-section {
-	height: 75vh;
+	margin-top: 50px;
+	height: 85vh;
+	width: 100%;
 }
 
 /* Payment and Upload  */
