@@ -39,8 +39,8 @@ ul {
 	margin: auto;
 	overflow: hidden;
 	padding: 0.2rem;
-	margin-top: 6rem;
-	margin-bottom: 3rem;
+	/* margin-top: 3rem; */
+	margin-bottom: -3rem;
 }
 
 /* Text Styles*/
@@ -597,6 +597,46 @@ button {
 	}
 }
 
+/* appointment Calendly Section  */
+
+.calendar {
+	z-index: 10;
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.calendar .calendly-style {
+	position: absolute;
+	width: 50vw;
+	min-width: 350px;
+	margin-top: 11vh;
+	height: 750px;
+	overflow: hidden;
+	/* padding: 30px; */
+	z-index: 10;
+}
+
+.calendly-inline-widget {
+	max-width: 70vw !important;
+	max-height: 60vh !important;
+	/* padding: 50px !important; */
+}
+
+.calendly-badge-widget {
+	/* right: auto !important;
+	left: 20px !important; */
+	right: 35px !important;
+	bottom: 50px !important;
+	border-radius: 25px !important;
+	border-color: var(--primary-color) !important;
+	border: 2px solid;
+	width: 160px;
+	position: absolute !important;
+	z-index: 0 !important;
+}
+
 /* FAQ */
 
 .FAQ-section {
@@ -731,7 +771,9 @@ button {
 /* Sign up and Sign in*/
 
 .auth-section {
-	height: 75vh;
+	margin-top: 50px;
+	height: 85vh;
+	width: 100%;
 }
 
 /* Payment and Upload  */
@@ -867,6 +909,7 @@ span.upload-path {
 	flex-direction: row;
 	text-align: center;
 }
+
 .footer .subscribe a {
 	color: #00ff4c;
 }
@@ -933,7 +976,6 @@ span.upload-path {
 	.footer .social-media {
 		font-size: 1.8rem;
 	}
-
 	.footer .social-media i {
 		padding: 0.5rem;
 	}
@@ -942,6 +984,9 @@ span.upload-path {
 	}
 	.footer .info-copyright h3 {
 		font-size: 0.8rem;
+	}
+	.calendly-badge-widget {
+		display: none;
 	}
 }
 
