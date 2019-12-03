@@ -427,6 +427,7 @@ button {
 
 .navbar ul {
 	display: flex;
+	color: rgb(20, 56, 95);
 }
 
 .navbar a {
@@ -511,6 +512,7 @@ button {
 	text-align: center;
 	flex-wrap: wrap;
 	color: black;
+	border-radius: 22px;
 }
 
 .col {
@@ -669,7 +671,7 @@ button {
 	margin: 10px;
 	padding: 4rem;
 	width: 48rem;
-	z-index: 5;
+	z-index: 0;
 	margin-top: -20vh;
 }
 
