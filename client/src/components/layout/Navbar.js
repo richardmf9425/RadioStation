@@ -42,6 +42,9 @@ const Navbar = ({ auth: { isAuthenticated, loading, user }, logout }) => {
 			<li>
 				<Link to="/contact">Contact</Link>
 			</li>
+			{/* <li>
+				<Link to="/appointment">Book Appt.</Link>
+			</li> */}
 
 			<li>
 				<Link to="/" onClick={() => scrollTo('faq')}>
