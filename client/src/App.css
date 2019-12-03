@@ -486,6 +486,10 @@ button {
 	background: url('./resources/yoga-2.jpg') no-repeat center center/cover;
 }
 
+.player-header {
+	padding-top: 15vh;
+}
+
 /* Pricing Section */
 
 .pricing-section {

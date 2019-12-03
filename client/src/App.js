@@ -48,7 +48,7 @@ function App() {
 						<Route exact path="/contact" component={Contact} />
 						<Route component={NotFound} />
 					</Switch>
-					<Element>
+					<Element name="player">
 						<Route exact path="/" component={Player} />
 					</Element>
 					<Element name="pricing">
