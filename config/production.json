@@ -1,0 +1,4 @@
+{
+    "mongoURI": "mongodb+srv://wellnessnetwork:wellness@cluster0-jjl4g.mongodb.net/test?retryWrites=true&w=majority",
+    "JWTSecret": "wellnessnetworkradiostation"
+}
