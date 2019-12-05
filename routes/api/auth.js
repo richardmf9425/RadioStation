@@ -1,4 +1,5 @@
 const express = require('express');
+const cors = require('cors');
 const router = express.Router();
 const auth = require('../../middleware/authentication');
 const User = require('../../models/User');
@@ -29,6 +30,7 @@ router.get('/', auth, async (req, res) => {
 //access Public
 
 //User Login Check
+router.options('*', cors);
 router.post(
 	'/',
 	[
@@ -79,7 +81,7 @@ router.put('/forgot-password', [
         .isEmpty()
         .isEmail()
         .withMessage('Must be a valid email address')
-], cors(), (req, res) => {
+], (req, res) => {
 	//const errors = validationResult(req);
 	//if (!errors.isEmpty()) return res.status(400).json({ errors: errors.array() });
 
@@ -129,7 +131,7 @@ router.put('/reset-password', [
         .isEmpty()
         .isLength({ min: 6 })
         .withMessage('Password must be at least 6 characters long')
-], cors(), async (req, res) => {
+], async (req, res) => {
 	const errors = validationResult(req);
 	if (!errors.isEmpty()) return res.status(400).json({ errors: errors.array() });
 
