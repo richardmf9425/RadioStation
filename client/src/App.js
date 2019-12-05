@@ -20,11 +20,8 @@ import PrivateRoute from './components/routing/PrivateRoute';
 import ThankYou from './components/layout/ThankYou';
 import NotFound from './components/layout/NotFound';
 import Contact from './components/layout/Contact';
-<<<<<<< HEAD
 import passwordReset from './components/auth/passwordReset';
-=======
 import Calendly from './components/layout/Calendly';
->>>>>>> 1a4c3562d5f353d36e0b50e861e35bdd1857df56
 
 const dotenv = require('dotenv');
 dotenv.config();
