@@ -6,6 +6,7 @@ import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { Redirect, Route } from 'react-router-dom';
 import FileUploader from './FileUploader';
+
 toast.configure();
 function Payment() {
 	const [ fireRedirect, setFireRedirect ] = useState(false);
@@ -41,16 +42,24 @@ function Payment() {
 	return (
 		<Fragment>
 			<section className="payment-section">
-				<FileUploader />
-				<h1 className="payment-header">Click to Pay</h1>
-				<StripeCheckout
-					stripeKey="pk_test_sgOdphKru41G67PCT4BlZSAr00ccaRfmQZ"
-					token={handleToken}
-					billingAddress
-					amount={10000}
-					name="radio service"
-				/>
-				{fireRedirect && <Redirect to="/thank-you" />}
+				<div className="payment-card">
+					<p className="upload-text">Upload your files below:</p>
+					<FileUploader />
+					<div className="pay-bottom">
+						<p className="payment-header"> Upload and Pay</p>
+						<div className="stripe-pay-button">
+							<StripeCheckout
+								stripeKey="pk_test_sgOdphKru41G67PCT4BlZSAr00ccaRfmQZ"
+								token={handleToken}
+								billingAddress
+								amount={10000}
+								name="Audio File Payment"
+								label="Next"
+							/>
+						</div>
+					</div>
+					{fireRedirect && <Redirect to="/thank-you" />}
+				</div>
 			</section>
 		</Fragment>
 	);

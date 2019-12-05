@@ -1,4 +1,4 @@
 node_modules
 
 ./client/node_modules
-./config/default.jsonsendgrid.env
+config/default.json  

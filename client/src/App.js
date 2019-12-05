@@ -20,8 +20,14 @@ import PrivateRoute from './components/routing/PrivateRoute';
 import ThankYou from './components/layout/ThankYou';
 import NotFound from './components/layout/NotFound';
 import Contact from './components/layout/Contact';
+<<<<<<< HEAD
 import passwordReset from './components/auth/passwordReset';
+=======
+import Calendly from './components/layout/Calendly';
+>>>>>>> 1a4c3562d5f353d36e0b50e861e35bdd1857df56
 
+const dotenv = require('dotenv');
+dotenv.config();
 if (localStorage.token) {
 	setAuthToken(localStorage.token);
 }
@@ -46,8 +52,12 @@ function App() {
 
 						<Route exact path="/" component={Landing} />
 						<Route exact path="/contact" component={Contact} />
+						<Route exact path="/appointment" component={Calendly} />
 						<Route component={NotFound} />
 					</Switch>
+					{/* <Element name="player">
+						<Route exact path="/" component={Player} />
+					</Element> */}
 					<Element name="pricing">
 						<Route exact path="/" component={Pricing} />
 					</Element>
