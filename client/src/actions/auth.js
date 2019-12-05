@@ -78,7 +78,6 @@ export const login = (email, password) => async (dispatch) => {
 	}
 };
 
-/*
 // Forgot Password
 export const forgotPasword = (email) => async (dispatch) => {
 	const config = {
@@ -90,7 +89,7 @@ export const forgotPasword = (email) => async (dispatch) => {
 	const body = JSON.stringify({ email });
 
 	try {
-		const res = await axios.post('/api/forgot-password', body, config);
+		const res = await axios.put('/api/forgot-password', body, config);
 		dispatch({
 			type: EMAIL_SENT,
 			payload: res.data
@@ -118,7 +117,7 @@ export const resetPassword = (email, password) => async (dispatch) => {
 	const body = JSON.stringify({ email, password });
 
 	try {
-		const res = await axios.post('/api/reset-password', body, config);
+		const res = await axios.put('/api/reset-password', body, config);
 		dispatch({
 			type: RESET_SUCCESS,
 			payload: res.data
@@ -134,8 +133,8 @@ export const resetPassword = (email, password) => async (dispatch) => {
 		});
 	}
 };
-*/
 
+/*
 export const forgotPasword = email => {
     return fetch(`http://localhost:2054/api/forgot-password`, {
         method: 'PUT',
@@ -167,6 +166,7 @@ export const resetPassword = resetInfo => {
         })
         .catch(err => console.log(err));
 };
+*/
 
 // User Logout
 
