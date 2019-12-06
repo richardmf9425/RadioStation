@@ -21,6 +21,7 @@ import ThankYou from './components/layout/ThankYou';
 import NotFound from './components/layout/NotFound';
 import Contact from './components/layout/Contact';
 import passwordReset from './components/auth/passwordReset';
+import changePassword from './components/auth/changePassword';
 import Calendly from './components/layout/Calendly';
 
 const dotenv = require('dotenv');
@@ -50,6 +51,7 @@ function App() {
 						<Route exact path="/" component={Landing} />
 						<Route exact path="/contact" component={Contact} />
 						<Route exact path="/appointment" component={Calendly} />
+						<Route path="/auth/password/reset/:token" component={changePassword} />
 						<Route component={NotFound} />
 					</Switch>
 					{/* <Element name="player">

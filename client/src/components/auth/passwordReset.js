@@ -9,11 +9,13 @@ const PasswordReset = ({ isAuthenticated }) => {
 	const [ formInfo, setFormInfo ] = useState({
 		email: ''
 	});
+	const [ showForm, setShowForm ] = useState(true);
 	const { email } = formInfo;
 	const onChange = (e) => setFormInfo({ ...formInfo, [e.target.name]: e.target.value });
 	const onSubmit = async (e) => {
 		e.preventDefault();
 		forgotPasword(email);
+		setShowForm(false);
 	};
 
 	if (isAuthenticated) {
@@ -21,8 +23,8 @@ const PasswordReset = ({ isAuthenticated }) => {
 	}
 	return (
 		<Fragment>
-			<div className=" auth-section container">
-				<div className="form-center">
+			<div className="auth-section container">
+				{showForm && <div className="form-center">
 					<h1 className="large text-primary">Reset Password</h1>
 					
 					<form className="form" onSubmit={(e) => onSubmit(e)}>
@@ -38,7 +40,6 @@ const PasswordReset = ({ isAuthenticated }) => {
 							/>
 						</div>
 						
-						
 						<div className="btn-center">
 							<button className="btn btn-primary uppercase ">
 								RESET PASSWORD <i className="fas fa-chevron-right icon-padding" />
@@ -48,7 +49,11 @@ const PasswordReset = ({ isAuthenticated }) => {
 					<p className="my-1">
 						Already have an account? <Link to="/login">Sign In</Link>
 					</p>
-				</div>
+				</div>}
+				{!showForm && <div className="text-center">
+					<h1 className="large text-primary">Success!</h1>
+					<p>Check your email for the link to change your password (this may take a few minutes).</p>
+				</div>}
 			</div>
 		</Fragment>
 	);

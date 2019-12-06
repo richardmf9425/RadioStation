@@ -132,28 +132,25 @@ router.put('/reset-password', [
         .isLength({ min: 6 })
         .withMessage('Password must be at least 6 characters long')
 ], async (req, res) => {
-	const errors = validationResult(req);
-	if (!errors.isEmpty()) return res.status(400).json({ errors: errors.array() });
+	//const errors = validationResult(req);
+	//if (!errors.isEmpty()) return res.status(400).json({ errors: errors.array() });
 
-	const { resetPasswordLink, newPassword } = req.body;
-	
+    const { resetPasswordLink, newPassword } = req.body;
 
-
-    if (resetPasswordLink) {
-        jwt.verify(resetPasswordLink, config.get('JWT_RESET_PASSWORD'), function(err, decoded) {
+    if (req.body.token) {
+        jwt.verify(req.body.token, config.get('JWT_RESET_PASSWORD'), function(err, decoded) {
             if (err) {
                 return res.status(401).json({
                     error: 'Expired link. Try again'
                 });
             }
-            User.findOne({ resetPasswordLink }, async (err, user) => {
+            let token = req.body.token;
+            User.findOne({ resetPasswordLink: token }, async (err, user) => {
                 if (err || !user) {
                     return res.status(401).json({
                         error: 'Something went wrong. Try later'
                     });
                 }
-            
-            
 
                 const updatedFields = {
                     password: await bcrypt.hash(newPassword, await bcrypt.genSalt()),
@@ -171,10 +168,14 @@ router.put('/reset-password', [
                     res.json({
                         message: `Great! Now you can login with your new password`
                     });
+                    console.log("Good");
                 });
             });
         });
     }
+    else res.status(400).json({
+        error: "Something wrong"
+    });
 });
 
 module.exports = router;

@@ -78,6 +78,7 @@ export const login = (email, password) => async (dispatch) => {
 	}
 };
 
+/*
 // Forgot Password
 export const forgotPasword = (email) => async (dispatch) => {
 	const config = {
@@ -132,32 +133,33 @@ export const resetPassword = (email, password) => async (dispatch) => {
 			type: RESET_FAIL
 		});
 	}
-};
+};*/
 
-/*
+
 export const forgotPasword = email => {
-    return fetch(`http://localhost:2054/api/forgot-password`, {
+    return fetch(`/api/forgot-password`, {
         method: 'PUT',
         headers: {
             Accept: 'application/json',
 			'Content-Type': 'application/json',
 			'Access-Control-Allow-Origin': '*'
         },
-		body: JSON.stringify(email)
+		body: JSON.stringify({ email })
     })
         .then(response => {
-			console.log(JSON.stringify(email));
+			console.log(JSON.stringify({ email }));
             return response.json();
         })
         .catch(err => console.log(err));
 };
 
 export const resetPassword = resetInfo => {
-    return fetch(`http://localhost:2054/api/reset-password`, {
+    return fetch(`/api/reset-password`, {
         method: 'PUT',
         headers: {
             Accept: 'application/json',
-            'Content-Type': 'application/json'
+			'Content-Type': 'application/json',
+			'Access-Control-Allow-Origin': '*'
         },
         body: JSON.stringify(resetInfo)
     })
@@ -166,7 +168,6 @@ export const resetPassword = resetInfo => {
         })
         .catch(err => console.log(err));
 };
-*/
 
 // User Logout
 

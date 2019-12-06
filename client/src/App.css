@@ -782,7 +782,7 @@ button {
 /* Sign up and Sign in*/
 
 .auth-section {
-	margin-top: 50px;
+	margin-top: 150px;
 	height: 85vh;
 	width: 100%;
 }
@@ -1222,4 +1222,10 @@ span.upload-path {
 
 ::-webkit-input-placeholder {
 	color: #9b9b9b;
+}
+
+/* Reset Password */
+
+.reset-message-center {
+
 }
