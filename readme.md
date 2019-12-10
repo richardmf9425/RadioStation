@@ -1,5 +1,5 @@
 # At the Wellness Network
-Website for At the Wellness Network company. https://wellnessnetwork.heroku.com
+Website for At the Wellness Network company. http://wellnessnetwork.heroku.com
 
 ## Tech Stack
 NodeJS, Express, Mongodb, JWT.\
