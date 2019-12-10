@@ -13,6 +13,12 @@ File upload to AWS S3 bucket.\
 Stripe payment.\
 Appointment Scheduling with Calendly.
 
+## Screenshots of main features
+<img src="client/src/resources/landing.png" width="400" height="280">
+<img src="client/src/resources/calendly.png" width="400" height="280">
+<img src="client/src/resources/upload.png" width="400" height="280">
+<img src="client/src/resources/stripe.png" width="400" height="280">
+
 
 
 ## List of libraries used:
